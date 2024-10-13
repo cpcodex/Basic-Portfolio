@@ -9,20 +9,20 @@
   </head>
 
   <body>
-    <div class="nav" id="nav">
-      <div class="nav-bar" id="nav-bar">
+    <section class="header" id="header">
+      <div class="header-nav" id="header-nav">
         <h1>Nikolos Winans</h1>
-        <div class="hamburger-menu" id="hamburger-menu">
+        <nav class="nav-bar" id="nav-bar">
           <a href="#bio">Bio</a>
           <a href="#projects">Projects</a>
           <a href="#stack">Tech Stack</a>
           <a href="contact.html">Contact</a>
-        </div>
+        </nav>
       </div>
-    </div>
+    </section>
     <br class="divider" />
 
-    <div class="head" id="head">
+    <section class="hero" id="hero">
       <img src="/assets/imgs/profile-pic.png" alt="CPCodex Logo" class="logo" />
       <button class="cv-download" id="cv-download" onclick="window.open('')">
         Download CV
@@ -34,9 +34,9 @@
       >
         GitHub
       </button>
-    </div>
+    </section>
 
-    <div class="bio" id="bio">
+    <section class="bio" id="bio">
       <h2>Bio</h2>
       <p>
         My online nickname is <b>CPcodex</b>. I traded a 10 year career as an
@@ -48,20 +48,26 @@
         I have always had a fascination with computers and space since I was a
         kid.
       </p>
-    </div>
+    </section>
     <br class="divider" />
 
-    <div class="projects" id="projects">
+    <section class="projects" id="projects">
       <h2>Projects</h2>
-      <div class="cards" id="cards">
-        <div class="project-1" id="project-1"><p>Project 1</p></div>
-        <div class="project-2" id="project-1"><p>Project 2</p></div>
-        <div class="project-3" id="project-1"><p>project 3</p></div>
-      </div>
-    </div>
+      <ul class="cards" id="cards">
+        <div class="li-cards">
+          <li class="project-1" id="project-1"><p>Project 1</p></li>
+        </div>
+        <div class="li-cards">
+          <li class="project-2" id="project-1"><p>Project 2</p></li>
+        </div>
+        <div class="li-cards">
+          <li class="project-3" id="project-1"><p>project 3</p></li>
+        </div>
+      </ul>
+    </section>
     <br class="divider" />
 
-    <div class="stack" id="stack">
+    <section class="stack" id="stack">
       <h2>Tech Stack</h2>
       <div class="icons" id="icons">
         <img src="/assets/imgs/icons/HTML-5-logo-vector-01.png" alt="html" />
@@ -78,8 +84,10 @@
         <img src="/assets/imgs/icons/default-gray.png" alt="null" />
         <img src="/assets/imgs/icons/default-gray.png" alt="null" />
       </div>
-    </div>
+    </section>
     <br class="divider" />
   </body>
-  <footer class="footer">Copyright. Nikolos Winans, CPcodex. 2024</footer>
+  <section class="footer" id="footer">
+    <footer class="copyright">Copyright. Nikolos Winans, CPcodex. 2024</footer>
+  </section>
 </html>
