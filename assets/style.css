@@ -3,6 +3,12 @@
 
 /* Main Elements */
 :root {
+  --color1: #0d1d25;
+  --color2: #104c64;
+  --color3: #c6c6d0;
+  --color4: #d59d80;
+  --color5: #c0754d;
+  --color6: #b6410f;
 }
 html {
   scroll-behavior: smooth;
@@ -14,14 +20,14 @@ html {
   outline: none;
   box-sizing: border-box;
 }
-nav {
-  /* height: 14vh; */
-}
 body {
   font-size: 24px;
   font-family: "Agdasima", sans-serif;
-  /* background-color: black;
-  color: white; */
+  background-color: var(--color1);
+  color: var(--color3);
+}
+h2 {
+  color: var(--color6);
 }
 
 /* Navbar */
@@ -42,18 +48,27 @@ nav,
 #name {
   font-weight: 700;
   font-size: 64px;
-  box-shadow: 5px 5px blue;
-  padding-right: 15px;
+  color: var(--color2);
+  text-decoration: underline;
+  text-decoration-color: var(--color5);
+  text-underline-offset: 1rem;
 }
+/* #name:hover {
+  color: var(--color3);
+  text-decoration: underline;
+  text-decoration-color: var(--color5);
+  text-underline-offset: 1rem;
+} */
 a {
-  color: black;
+  /* color: black; */
+  color: var(--color2);
   text-decoration: none;
-  text-decoration-color: aliceblue;
+  text-decoration-color: var(--color5);
 }
 a:hover {
-  color: blue;
+  color: var(--color3);
   text-decoration: underline;
-  text-decoration-color: blue;
+  text-decoration-color: var(--color5);
   text-underline-offset: 1rem;
 }
 
