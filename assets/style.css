@@ -9,6 +9,7 @@
   --color4: #d59d80;
   --color5: #c0754d;
   --color6: #b6410f;
+  --color7: #4a4150;
 }
 html {
   scroll-behavior: smooth;
@@ -28,6 +29,10 @@ body {
 }
 h2 {
   color: var(--color6);
+}
+footer {
+  color: var(--color5);
+  font-size: 18px;
 }
 
 /* Navbar */
@@ -53,14 +58,7 @@ nav,
   text-decoration-color: var(--color5);
   text-underline-offset: 1rem;
 }
-/* #name:hover {
-  color: var(--color3);
-  text-decoration: underline;
-  text-decoration-color: var(--color5);
-  text-underline-offset: 1rem;
-} */
 a {
-  /* color: black; */
   color: var(--color2);
   text-decoration: none;
   text-decoration-color: var(--color5);
