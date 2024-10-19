@@ -1,7 +1,58 @@
+/* Google Font Styles */
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+/* Main Elements */
+:root {
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
+nav {
+  /* height: 14vh; */
+}
+body {
+  font-size: 24px;
+  font-family: "Agdasima", sans-serif;
+  /* background-color: black;
+  color: white; */
+}
+
+/* Navbar */
+nav,
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  list-style: none;
+}
+.nav-list li {
+  margin-right: 20px;
+}
+.nav-list li:last-child {
+  margin-right: 0;
+}
+#name {
+  font-weight: 700;
+  font-size: 64px;
+  box-shadow: 5px 5px blue;
+  padding-right: 15px;
+}
+
+/* PFP Icon Class */
 .logo {
   height: 200px;
   width: 200px;
 }
+
+/* Tech Stack / Toolkit Icons Class */
 .icons > img {
   height: 40px;
   width: 40px;
