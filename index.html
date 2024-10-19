@@ -13,107 +13,161 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <h1 id="name">Nikolos Winans</h1>
-      <div>
-        <ul class="nav-list">
-          <li><a href="#bio">Bio</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Hamburger Nav -->
-    <nav id="hamburger-nav">
-      <div class="hamburger-menu">
-        <div class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header>
+      <nav class="navbar">
+        <h1 id="name">Nikolos Winans</h1>
+        <div>
+          <ul class="nav-list">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#bio" onclick="toggleMenu()">Bio</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#stack" onclick="toggleMenu()">Stack</a></li>
-          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <!-- Hamburger Nav -->
+      <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#bio" onclick="toggleMenu()">Bio</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#stack" onclick="toggleMenu()">Stack</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <br class="divider" />
 
-    <!-- #TODO: work on hero -->
     <main>
-      <section class="hero" id="hero">
+      <!-- #TODO: work on hero -->
+      <section class="hero">
         <img
           src="/assets/imgs/profile-pic.png"
           alt="CPCodex Logo"
           class="logo"
         />
-        <button class="cv-download" id="cv-download" onclick="window.open('')">
+        <button class="cv-download" onclick="window.open('')">
           Download CV
         </button>
         <button
           class="github"
-          id="github"
           onclick="location.href='https://github.com/cpcodex'"
         >
           GitHub
         </button>
-      </section>
 
-      <section class="bio" id="bio">
-        <h2>Bio</h2>
-        <p>
-          My online nickname is <b>CPcodex</b>. I traded a 10 year career as an
-          ASE Certified Automotive Technician to become a Developer in 2023. I
-          pride myself as an <i>autodidact</i> as I have a hobby in learning new
-          things, mostly self-taught.
-        </p>
-        <p>
-          I have always had a fascination with computers and space since I was a
-          kid.
-        </p>
+        <!-- #TODO: Setup X Icon for socials -->
+        <button
+          class="x-social"
+          onclick="location.href='https://x.com/cpcodex'"
+        >
+          x social media
+        </button>
       </section>
       <br class="divider" />
 
-      <section class="projects" id="projects">
+      <article class="bio">
+        <!-- #TODO: properly write out bio -->
+        <section class="bio-main" id="bio">
+          <h2>Bio</h2>
+          <p>
+            My online nickname is <b>CPcodex</b>. I traded a 10 year career as
+            an ASE Certified Automotive Technician to become a Developer in
+            2023. I pride myself as an <i>autodidact</i> as I have a hobby in
+            learning new things, mostly self-taught.
+          </p>
+          <p>
+            I have always had a fascination with computers and space since I was
+            a kid.
+          </p>
+        </section>
+      </article>
+      <br class="divider" />
+
+      <section class="projects">
         <h2>Projects</h2>
-        <ul class="cards" id="cards">
+        <!-- #TODO: fix bullet points in UL, build cards -->
+        <ul class="cards">
           <div class="li-cards">
-            <li class="project-1" id="project-1"><p>Project 1</p></li>
+            <li id="project-1"><p>Project 1</p></li>
           </div>
           <div class="li-cards">
-            <li class="project-2" id="project-1"><p>Project 2</p></li>
+            <li id="project-2"><p>Project 2</p></li>
           </div>
           <div class="li-cards">
-            <li class="project-3" id="project-1"><p>project 3</p></li>
+            <li id="project-3"><p>project 3</p></li>
           </div>
         </ul>
       </section>
       <br class="divider" />
 
+      <!-- #TODO: resize icons/add more stacks -->
       <section class="stack" id="stack">
         <h2>Tech Stack</h2>
-        <div class="icons" id="icons">
-          <img src="/assets/imgs/icons/HTML-5-logo-vector-01.png" alt="html" />
-          <img src="/assets/imgs/icons/CSS-3-01.png" alt="css" />
-          <img src="/assets/imgs/icons/JavaScript-01.png" alt="javascript" />
-          <img src="/assets/imgs/icons/Node-JS-01.png" alt="node-js" />
-          <img src="/assets/imgs/icons/React-05.png" alt="react" />
-          <img src="/assets/imgs/icons/Python-04.png" alt="python" />
+        <div class="icons">
+          <img
+            id="html"
+            src="/assets/imgs/icons/HTML-5-logo-vector-01.png"
+            alt="html"
+          />
+          <img id="css" src="/assets/imgs/icons/CSS-3-01.png" alt="css" />
+          <img
+            id="js"
+            src="/assets/imgs/icons/JavaScript-01.png"
+            alt="javascript"
+          />
+          <img
+            id="node"
+            src="/assets/imgs/icons/Node-JS-01.png"
+            alt="node-js"
+          />
+          <img id="react" src="/assets/imgs/icons/React-05.png" alt="react" />
+          <img
+            id="python"
+            src="/assets/imgs/icons/Python-04.png"
+            alt="python"
+          />
         </div>
+      </section>
+      <br class="divider" />
+
+      <!-- #TODO: add toolkit icons -->
+      <section class="toolkit">
         <h2>Toolkit</h2>
-        <div class="icons" id="icons">
-          <img src="/assets/imgs/icons/default-gray.png" alt="null" />
-          <img src="/assets/imgs/icons/default-gray.png" alt="null" />
-          <img src="/assets/imgs/icons/default-gray.png" alt="null" />
-          <img src="/assets/imgs/icons/default-gray.png" alt="null" />
+        <div class="icons">
+          <img
+            id="kit-1"
+            src="/assets/imgs/icons/default-gray.png"
+            alt="null"
+          />
+          <img
+            id="kit-2"
+            src="/assets/imgs/icons/default-gray.png"
+            alt="null"
+          />
+          <img
+            id="kit-3"
+            src="/assets/imgs/icons/default-gray.png"
+            alt="null"
+          />
+          <img
+            id="kit-4"
+            src="/assets/imgs/icons/default-gray.png"
+            alt="null"
+          />
         </div>
       </section>
       <br class="divider" />
     </main>
+
     <footer>
+      <!-- #TODO: set footing dimensions -->
       <section class="footer" id="footer">
         <footer class="copyright">
           Copyright. Nikolos Winans, CPcodex. 2024

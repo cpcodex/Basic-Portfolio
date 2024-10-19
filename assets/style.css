@@ -3,13 +3,15 @@
 
 /* Main Elements */
 :root {
-  --color1: #0d1d25;
+  --color-bg: #0d1d25;
   --color2: #104c64;
   --color3: #c6c6d0;
   --color4: #d59d80;
   --color5: #c0754d;
   --color6: #b6410f;
   --color7: #4a4150;
+  --color8: #142b35;
+  --color-nav: #3e96b9;
 }
 html {
   scroll-behavior: smooth;
@@ -24,7 +26,7 @@ html {
 body {
   font-size: 24px;
   font-family: "Agdasima", sans-serif;
-  background-color: var(--color1);
+  background-color: var(--color-bg);
   color: var(--color3);
 }
 h2 {
@@ -34,8 +36,11 @@ footer {
   color: var(--color5);
   font-size: 18px;
 }
-
+header {
+  background-color: var(--color8);
+}
 /* Navbar */
+
 nav,
 .nav-list {
   display: flex;
@@ -53,13 +58,13 @@ nav,
 #name {
   font-weight: 700;
   font-size: 64px;
-  color: var(--color2);
+  color: var(--color-nav);
   text-decoration: underline;
   text-decoration-color: var(--color5);
   text-underline-offset: 1rem;
 }
 a {
-  color: var(--color2);
+  color: var(--color-nav);
   text-decoration: none;
   text-decoration-color: var(--color5);
 }
