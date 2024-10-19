@@ -45,6 +45,22 @@ nav,
   box-shadow: 5px 5px blue;
   padding-right: 15px;
 }
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: aliceblue;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 1rem;
+}
+
+/* Hamburger Nav */
+#hamburger-nav {
+  display: none;
+}
 
 /* PFP Icon Class */
 .logo {
